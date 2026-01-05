@@ -1,0 +1,74 @@
+/* Table container */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* responsive */
+  margin-top: 20px;
+}
+
+/* Main table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+/* Table headers */
+.table th {
+  background-color: #1f2937; /* dark slate */
+  color: #ffffff;
+  font-weight: bold;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Table cells */
+.table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb; /* light gray */
+}
+
+/* Hover effect */
+.table tr:hover {
+  background-color: #f3f4f6;
+}
+
+/* CREDIT / DEBIT colors */
+.table td.credit {
+  color: green;
+  font-weight: bold;
+}
+
+.table td.debit {
+  color: red;
+  font-weight: bold;
+}
+
+/* Optional: small action buttons in table */
+.table .btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.table .btn.edit {
+  background-color: #3b82f6; /* blue */
+  color: white;
+  border: none;
+}
+
+.table .btn.delete {
+  background-color: #ef4444; /* red */
+  color: white;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table th, .table td {
+    padding: 8px 10px;
+  }
+}

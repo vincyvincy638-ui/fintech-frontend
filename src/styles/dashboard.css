@@ -1,0 +1,74 @@
+/* General dashboard container */
+.dashboard-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb; /* light gray background */
+  min-height: 100vh;
+}
+
+/* Headings */
+.dashboard-container h2 {
+  color: #111827; /* dark text */
+  margin-bottom: 10px;
+}
+
+.dashboard-container h4 {
+  color: #374151;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dashboard-table th, .dashboard-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.dashboard-table th {
+  background-color: #1f2937; /* dark slate */
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.dashboard-table tr:hover {
+  background-color: #f3f4f6; /* hover effect */
+}
+
+.dashboard-table td.credit {
+  color: green;
+  font-weight: bold;
+}
+
+.dashboard-table td.debit {
+  color: red;
+  font-weight: bold;
+}
+
+/* Buttons */
+.dashboard-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard-button.logout {
+  background-color: #ef4444; /* red */
+  color: white;
+}
+
+.dashboard-button.action {
+  background-color: #3b82f6; /* blue */
+  color: white;
+}
