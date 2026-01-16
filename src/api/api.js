@@ -7,7 +7,7 @@ const api = axios.create({
   },
 });
 
-// BASIC AUTH attach panna
+// BASIC AUTH attach 
 export const setAuth = (username, password) => {
   api.defaults.auth = {
     username,

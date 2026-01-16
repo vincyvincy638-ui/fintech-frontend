@@ -10,9 +10,11 @@ const PortfolioDashboard = () => {
   useEffect(() => {
     async function loadPortfolio() {
       try {
+        const startTime = Date.now(); // latency check start
         const res = await getPortfolio();
+        const endTime = Date.now();
         setPortfolio(res.data);
-        setLatency(res.latency);
+        setLatency(endTime - startTime); // calculate round-trip latency
       } catch (err) {
         console.error(err);
         setError("Backend not reachable");
@@ -31,6 +33,7 @@ const PortfolioDashboard = () => {
       <h3>Total Value: ₹{portfolio.totalValue}</h3>
       <h4>Latency: {latency} ms</h4>
 
+      {/* PortfolioChart will show both Bar & Pie charts */}
       <PortfolioChart stocks={portfolio.stocks} />
     </div>
   );
